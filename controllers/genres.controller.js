@@ -1,7 +1,7 @@
 const Genre = require("../models/Genre.model")
 
 module.exports.genreController = {
-    getGenres: async (req, res) => {
+    getGenre: async (req, res) => {
         const data = await Genre.find({});
         res.json(data);
     },
